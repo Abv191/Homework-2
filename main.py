@@ -18,3 +18,14 @@ def get_birthdays_per_week(users):
     for weekday, names in birthdays_by_day.items():
         if names:
             print(f"{weekday}: {', '.join(names)}")
+
+# Приклад використання
+users = [
+    {'name': 'John', 'birthday': datetime(2023, 6, 28)},
+    {'name': 'Alice', 'birthday': datetime(2023, 6, 30)},
+    {'name': 'Bob', 'birthday': datetime(2023, 7, 2)},
+    {'name': 'Kate', 'birthday': datetime(2023, 7, 3)},
+    {'name': 'Mike', 'birthday': datetime(2023, 7, 5)}
+]
+
+get_birthdays_per_week(users)
